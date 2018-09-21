@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
 
   def index
-    @nodes = Node.all
+    @nodes = Node.in_tree_order
   end
 end
