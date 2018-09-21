@@ -11,7 +11,8 @@ export default class Directory extends Component {
   renderNodes = () => {
     return _.map(this.state.nodes, (node, i) => {
         return <div className="child"
-                    key={ "node_" + i }>
+                    key={ "node_" + i }
+                    style={{ marginLeft: 20*node.level }}>
                       {node.name}
                </div>
       }
